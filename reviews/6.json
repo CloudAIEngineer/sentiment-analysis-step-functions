@@ -1,0 +1,72 @@
+[
+    {
+        "feedbackId": "3e9f4b5f-32c5-4b02-b6e0-b2a633b9ac73",
+        "userId": "user3928",
+        "timestamp": "2024-07-01T09:28:13Z",
+        "feedbackText": "The app is almost perfect now. I no longer experience crashes, which is great!",
+        "feedbackCategory": "App"
+    },
+    {
+        "feedbackId": "5e3be5a2-b40e-471a-a14e-64dbfa9b2110",
+        "userId": "user5320",
+        "timestamp": "2024-07-03T14:42:31Z",
+        "feedbackText": "I’m really happy with the speed of delivery. My package arrived 2 days earlier than expected!",
+        "feedbackCategory": "Shipping"
+    },
+    {
+        "feedbackId": "925b20d1-bbd1-4b70-8b8e-4671c054f12d",
+        "userId": "user1234",
+        "timestamp": "2024-07-05T11:11:59Z",
+        "feedbackText": "The customer service team was quick to address my issue. I’m satisfied with how it was handled.",
+        "feedbackCategory": "Service"
+    },
+    {
+        "feedbackId": "1c92474a-2020-48c6-a1c2-11d0bff04f45",
+        "userId": "user2749",
+        "timestamp": "2024-07-07T13:25:12Z",
+        "feedbackText": "The product quality has improved even more. It's exactly what I was hoping for.",
+        "feedbackCategory": "Product"
+    },
+    {
+        "feedbackId": "f1ff74b7-1f92-4302-93c5-97e8e9ed8462",
+        "userId": "user4612",
+        "timestamp": "2024-07-10T10:18:47Z",
+        "feedbackText": "The app’s performance is consistently good now. I can easily find what I need and it loads fast.",
+        "feedbackCategory": "App"
+    },
+    {
+        "feedbackId": "4d56e58f-f928-45ba-a9f6-580f6189be8e",
+        "userId": "user6452",
+        "timestamp": "2024-07-13T15:50:02Z",
+        "feedbackText": "Shipping was fast, and the packaging was top-notch. I had no issues at all this time.",
+        "feedbackCategory": "Shipping"
+    },
+    {
+        "feedbackId": "1d6a34a4-01de-4ea1-bd3d-6e57b4f1c9cd",
+        "userId": "user5321",
+        "timestamp": "2024-07-16T13:17:28Z",
+        "feedbackText": "I had a small issue with the app freezing, but customer support helped me solve it right away.",
+        "feedbackCategory": "App"
+    },
+    {
+        "feedbackId": "73f6f3c0-708e-4788-b3b2-dc70cc7363bc",
+        "userId": "user3014",
+        "timestamp": "2024-07-18T11:05:04Z",
+        "feedbackText": "Great product and fast delivery! I’ve had no issues with either, and I will buy again.",
+        "feedbackCategory": "Shipping"
+    },
+    {
+        "feedbackId": "d5b3cf24-bfdb-4a1f-b375-2b89048a66a0",
+        "userId": "user1958",
+        "timestamp": "2024-07-20T14:42:09Z",
+        "feedbackText": "The app is really smooth now, and everything works as expected. Well done on the improvements!",
+        "feedbackCategory": "App"
+    },
+    {
+        "feedbackId": "855f34b7-e6a0-4c3c-b29d-ded9dbad6cba",
+        "userId": "user7453",
+        "timestamp": "2024-07-22T16:55:28Z",
+        "feedbackText": "I’ve been really happy with this product, and the shipping was quick and hassle-free.",
+        "feedbackCategory": "Shipping"
+    }
+]

@@ -1,0 +1,146 @@
+service: sentiment-analysis-step-functions
+
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: python3.9
+  region: eu-central-1
+
+plugins:
+  - serverless-step-functions
+  - serverless-python-requirements
+
+custom:
+  emailEndpoint: oksana.awsconsole@gmail.com
+  bucketName: review-data-store-20241218
+
+functions:
+  extractFeedback:
+    handler: handlers/extract_feedback.handler
+    timeout: 30
+    environment:
+      DYNAMODB_TABLE: !Ref SentimentTable
+    role: !GetAtt LambdaDynamoDBRole.Arn
+
+  analyzeSentiment:
+    handler: handlers/analyze_sentiment.handler
+    timeout: 60
+    environment:
+      DYNAMODB_TABLE: !Ref SentimentTable
+    role: !GetAtt AnalyzeSentimentRole.Arn
+
+  storeResults:
+    handler: handlers/store_results.handler
+    timeout: 30
+    environment:
+      DYNAMODB_TABLE: !Ref SentimentTable
+    role: !GetAtt LambdaDynamoDBRole.Arn
+
+  sendEmail:
+    handler: handlers/send_email.handler
+    timeout: 30
+    environment:
+      SNS_TOPIC_ARN: !Ref NotificationSNSTopic
+    role: !GetAtt SNSPublishRole.Arn
+
+  S3TriggerHandler:
+    handler: handlers/s3_trigger_handler.handler
+    timeout: 30
+    environment:
+      STATE_MACHINE_ARN: ${self:outputs.SentimentAnalysisStateMachineArn.Value}
+    events:
+      - s3:
+          bucket: ${self:custom.bucketName}
+          event: s3:ObjectCreated:*
+          rules:
+            - suffix: .json
+    role: !GetAtt S3TriggerRole.Arn
+
+stepFunctions:
+  stateMachines:
+    sentimentAnalysisStateMachine:
+      name: sentimentAnalysisStateMachine
+      type: EXPRESS
+      role: !GetAtt StepFunctionsExecutionRole.Arn
+      loggingConfig:
+        level: ALL
+        includeExecutionData: true
+        destinations:
+          - Fn::GetAtt: [StepFunctionLogGroup, Arn]
+      definition:
+        StartAt: ExtractFeedback
+        States:
+          ExtractFeedback:
+            Type: Task
+            Resource:
+              Fn::GetAtt:
+                - ExtractFeedbackLambdaFunction
+                - Arn
+            ResultPath: $.feedbackData
+            Next: AnalyzeSentiment
+          AnalyzeSentiment:
+            Type: Task
+            Resource:
+              Fn::GetAtt:
+                - AnalyzeSentimentLambdaFunction
+                - Arn
+            InputPath: $.feedbackData
+            ResultPath: $.analysisResult
+            Next: ParallelBranch
+          ParallelBranch:
+            Type: Parallel
+            Next: EndState
+            Branches:
+              - StartAt: StoreResults
+                States:
+                  StoreResults:
+                    Type: Task
+                    Resource:
+                      Fn::GetAtt:
+                        - StoreResultsLambdaFunction
+                        - Arn
+                    InputPath: $.analysisResult
+                    End: true
+              - StartAt: CheckNegativeSentiment
+                States:
+                  CheckNegativeSentiment:
+                    Type: Choice
+                    Choices:
+                      - Variable: $.analysisResult.sentiment
+                        StringEquals: NEGATIVE
+                        Next: SendEmail
+                    Default: SkipEmail
+                  SendEmail:
+                    Type: Task
+                    Resource:
+                      Fn::GetAtt:
+                        - SendEmailLambdaFunction
+                        - Arn
+                    InputPath: $.feedbackData
+                    End: true
+                  SkipEmail:
+                    Type: Succeed
+          EndState:
+            Type: Succeed
+
+resources:
+  - ${file(resources/iam-roles.yml)}
+  - ${file(resources/dynamodb.yml)}
+  - ${file(resources/cloudwatch.yml)}
+  - ${file(resources/sns.yml)}
+
+outputs:
+  SentimentAnalysisStateMachineArn:
+    Description: The ARN of the provisioning state machine
+    Value:
+      Ref: SentimentAnalysisStateMachine
+
+package:
+  individually: true
+  exclude:
+    - "*.json"
+    - "node_modules/**"
+    - ".serverless/**"
+    - ".git/**"
+    - "env/**"

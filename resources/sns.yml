@@ -1,0 +1,8 @@
+Resources:
+    NotificationSNSTopic:
+      Type: AWS::SNS::Topic
+      Properties:
+        DisplayName: SentimentNotification
+        Subscription:
+          - Endpoint: ${self:custom.emailEndpoint}
+            Protocol: email

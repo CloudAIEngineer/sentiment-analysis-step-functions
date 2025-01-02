@@ -1,0 +1,6 @@
+Resources:
+  StepFunctionLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: /aws/vendedlogs/states/sentimentAnalysisStateMachine
+      RetentionInDays: 5

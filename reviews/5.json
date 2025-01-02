@@ -1,0 +1,100 @@
+[
+    {
+        "feedbackId": "4671c9f2-2428-4202-907a-bf8b623299b4",
+        "userId": "user4102",
+        "timestamp": "2024-05-01T10:25:31Z",
+        "feedbackText": "The product arrived in decent condition, but the app is still too buggy for my liking.",
+        "feedbackCategory": "App"
+    },
+    {
+        "feedbackId": "32bcd73b-4a6e-4e1f-a450-d501f03fdc99",
+        "userId": "user5283",
+        "timestamp": "2024-05-04T11:12:02Z",
+        "feedbackText": "Shipping was slower than expected, but the product quality seems better than last time.",
+        "feedbackCategory": "Shipping"
+    },
+    {
+        "feedbackId": "0e3b0a01-561f-40f4-9b43-f4ba9b682cdc",
+        "userId": "user7529",
+        "timestamp": "2024-05-07T09:47:56Z",
+        "feedbackText": "I’ve had some issues with the app freezing up, but customer service responded promptly to my concerns.",
+        "feedbackCategory": "App"
+    },
+    {
+        "feedbackId": "e58e978a-b315-47a4-8ac4-b869ed1f0637",
+        "userId": "user6211",
+        "timestamp": "2024-05-10T14:23:08Z",
+        "feedbackText": "The app design is cleaner, but the shipping process still needs improvement. It took over a week.",
+        "feedbackCategory": "Shipping"
+    },
+    {
+        "feedbackId": "0ad7c8fd-d110-4c5d-b3fa-c49764de2b9f",
+        "userId": "user1046",
+        "timestamp": "2024-05-15T13:40:02Z",
+        "feedbackText": "Customer service has improved, though response times are still a bit slow.",
+        "feedbackCategory": "Service"
+    },
+    {
+        "feedbackId": "7b65963c-5100-4a4b-b3db-4b82d0477f66",
+        "userId": "user9132",
+        "timestamp": "2024-05-18T12:18:29Z",
+        "feedbackText": "I’ve had an overall good experience with the product, but the app still needs work to be smoother.",
+        "feedbackCategory": "Product"
+    },
+    {
+        "feedbackId": "4f1a8530-8c77-4633-a41f-cf0a6b8e983f",
+        "userId": "user3129",
+        "timestamp": "2024-05-22T14:05:17Z",
+        "feedbackText": "The app’s functionality is much better. The interface is easier to navigate now.",
+        "feedbackCategory": "App"
+    },
+    {
+        "feedbackId": "a2cd2a8b-fd4c-44fa-bb28-7c8a2ebea98f",
+        "userId": "user5091",
+        "timestamp": "2024-05-25T11:55:36Z",
+        "feedbackText": "The product quality exceeded my expectations, and the delivery was much faster this time.",
+        "feedbackCategory": "Shipping"
+    },
+    {
+        "feedbackId": "a33b99fc-7683-42b3-8ad7-e72d1a18d9ab",
+        "userId": "user5194",
+        "timestamp": "2024-06-02T10:40:56Z",
+        "feedbackText": "I was really impressed by the packaging, and the product is exactly as described. Great job!",
+        "feedbackCategory": "Product"
+    },
+    {
+        "feedbackId": "af1c539f-9970-4873-9d74-43273d543462",
+        "userId": "user4029",
+        "timestamp": "2024-06-05T13:26:48Z",
+        "feedbackText": "Shipping was perfect! The product came on time and in great condition, I’m really satisfied.",
+        "feedbackCategory": "Shipping"
+    },
+    {
+        "feedbackId": "0b431f4d-b30c-4b94-8b99-6c6f70c4df2a",
+        "userId": "user1025",
+        "timestamp": "2024-06-08T11:17:34Z",
+        "feedbackText": "Customer service was fantastic. They helped me resolve an issue quickly without any hassle.",
+        "feedbackCategory": "Service"
+    },
+    {
+        "feedbackId": "16f52e4d-0f0f-496e-b5b8-75a3a67fe9b6",
+        "userId": "user7203",
+        "timestamp": "2024-06-12T10:05:45Z",
+        "feedbackText": "The app works much smoother now. I’m glad the updates seem to be making a real difference.",
+        "feedbackCategory": "App"
+    },
+    {
+        "feedbackId": "15e2e623-f640-45f9-ae8d-319d9dbab22a",
+        "userId": "user2034",
+        "timestamp": "2024-06-15T12:15:26Z",
+        "feedbackText": "The product is high quality, and the delivery was surprisingly fast. I’m really happy with the service overall.",
+        "feedbackCategory": "Shipping"
+    },
+    {
+        "feedbackId": "35f4d3e8-fdbd-4822-b56f-9c4510848d2f",
+        "userId": "user6154",
+        "timestamp": "2024-06-17T14:35:08Z",
+        "feedbackText": "The product looks amazing, and I’m really enjoying using it. Delivery was quick as well.",
+        "feedbackCategory": "Product"
+    }
+]

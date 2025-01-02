@@ -1,0 +1,72 @@
+[
+    {
+        "feedbackId": "5cbeb6ab-6595-49d9-8d56-5a7d82a40ed1",
+        "userId": "user9023",
+        "timestamp": "2024-01-10T11:30:45Z",
+        "feedbackText": "Delivery was extremely slow, and customer service didn’t help at all.",
+        "feedbackCategory": "Shipping"
+    },
+    {
+        "feedbackId": "c6d3fbc5-f788-47a1-bf45-e9831c2ac9ae",
+        "userId": "user6294",
+        "timestamp": "2024-01-20T08:57:19Z",
+        "feedbackText": "App UI is quite confusing, not very user-friendly.",
+        "feedbackCategory": "Design"
+    },
+    {
+        "feedbackId": "853ed9ae-7e28-4d27-8106-9472d06dbdd5",
+        "userId": "user2847",
+        "timestamp": "2024-01-28T09:16:31Z",
+        "feedbackText": "The product is good, but I received it late and the packaging was poor.",
+        "feedbackCategory": "Shipping"
+    },
+    {
+        "feedbackId": "0a5870d0-9416-4847-8a13-971a8a2fc5f0",
+        "userId": "user3925",
+        "timestamp": "2024-02-05T11:30:32Z",
+        "feedbackText": "Customer support was very helpful, but the response time was much longer than expected.",
+        "feedbackCategory": "Service"
+    },
+    {
+        "feedbackId": "1a768c29-08c8-4edb-b0b2-2b8797383d7d",
+        "userId": "user1460",
+        "timestamp": "2024-02-12T10:24:45Z",
+        "feedbackText": "Fast delivery this time, and the product quality has improved significantly.",
+        "feedbackCategory": "Shipping"
+    },
+    {
+        "feedbackId": "fc31cf52-b991-429d-b016-21f325f59c77",
+        "userId": "user6045",
+        "timestamp": "2024-02-20T14:40:32Z",
+        "feedbackText": "The app is much better now, less crashes and smoother performance.",
+        "feedbackCategory": "App"
+    },
+    {
+        "feedbackId": "c3f49e83-d45e-45f2-8904-dbded4b5e5bc",
+        "userId": "user5321",
+        "timestamp": "2024-02-25T15:05:50Z",
+        "feedbackText": "Happy with the product, and shipping was faster this time.",
+        "feedbackCategory": "Shipping"
+    },
+    {
+        "feedbackId": "8779b43c-07b9-470b-bb66-57e0b26a92fc",
+        "userId": "user1810",
+        "timestamp": "2024-03-03T16:20:22Z",
+        "feedbackText": "I really appreciate how much the customer service has improved. Fast and efficient!",
+        "feedbackCategory": "Service"
+    },
+    {
+        "feedbackId": "345de06d-8853-4d60-b9fc-dca5c38c871b",
+        "userId": "user5420",
+        "timestamp": "2024-03-08T12:32:13Z",
+        "feedbackText": "The product exceeded my expectations. The app still needs some work, though.",
+        "feedbackCategory": "App"
+    },
+    {
+        "feedbackId": "be1c9ecf-b6d2-4843-89d0-48f36cb4ae2d",
+        "userId": "user7450",
+        "timestamp": "2024-03-15T10:12:30Z",
+        "feedbackText": "Great improvement in shipping. Fast delivery and good packaging.",
+        "feedbackCategory": "Shipping"
+    }
+]

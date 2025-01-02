@@ -1,0 +1,72 @@
+[
+    {
+        "feedbackId": "f90d3964-9d5c-4c84-a593-7e1e14b5570d",
+        "userId": "user3872",
+        "timestamp": "2024-12-01T10:21:04Z",
+        "feedbackText": "I’m impressed! The app has been stable for the past month, and I’ve had no issues. Well done!",
+        "feedbackCategory": "App"
+    },
+    {
+        "feedbackId": "243b3f59-df7e-4687-a23d-0b8de34c43ab",
+        "userId": "user8256",
+        "timestamp": "2024-12-03T11:48:56Z",
+        "feedbackText": "Product arrived on time and in perfect condition. Everything is working as expected. Very happy with the service.",
+        "feedbackCategory": "Shipping"
+    },
+    {
+        "feedbackId": "ebc440a9-53fe-41a4-b7e1-2a6824878a50",
+        "userId": "user5140",
+        "timestamp": "2024-12-05T14:23:14Z",
+        "feedbackText": "I had an issue with my order, but customer service was amazing and fixed it within hours. Great experience overall.",
+        "feedbackCategory": "Service"
+    },
+    {
+        "feedbackId": "cc0a02b3-dbd6-4d68-a55a-9978bc64a95f",
+        "userId": "user2201",
+        "timestamp": "2024-12-07T10:30:01Z",
+        "feedbackText": "I’m glad the product quality has improved so much. Everything is exactly as described. Very satisfied!",
+        "feedbackCategory": "Product"
+    },
+    {
+        "feedbackId": "9f4dbf3d-0c89-4967-9f3b-d53a7c0bbf09",
+        "userId": "user6381",
+        "timestamp": "2024-12-09T13:52:49Z",
+        "feedbackText": "The app is performing great now! No more crashes, and everything loads smoothly.",
+        "feedbackCategory": "App"
+    },
+    {
+        "feedbackId": "fd3f9ca7-3b72-411f-8e1e-97cc07525d4e",
+        "userId": "user1047",
+        "timestamp": "2024-12-11T11:02:33Z",
+        "feedbackText": "Shipping was fast, and the package was intact. No issues, just as I expected. Excellent service.",
+        "feedbackCategory": "Shipping"
+    },
+    {
+        "feedbackId": "fa6b491b-288f-4317-b07f-4d14d1959e2a",
+        "userId": "user5761",
+        "timestamp": "2024-12-13T12:09:50Z",
+        "feedbackText": "Customer service was very responsive and helped me with my issue quickly. I feel valued as a customer.",
+        "feedbackCategory": "Service"
+    },
+    {
+        "feedbackId": "6e577e4e-97a6-4c0b-b502-76fa1d10e8f3",
+        "userId": "user9054",
+        "timestamp": "2024-12-15T14:35:11Z",
+        "feedbackText": "The product is amazing. It works perfectly, and I’m enjoying every feature. Definitely a good purchase.",
+        "feedbackCategory": "Product"
+    },
+    {
+        "feedbackId": "eef1f370-5f87-4a82-9117-2fdd4d9ef6f2",
+        "userId": "user4895",
+        "timestamp": "2024-12-17T13:45:26Z",
+        "feedbackText": "I’m happy with the improvements in the app. It’s now much faster and easier to use. Great job on the updates!",
+        "feedbackCategory": "App"
+    },
+    {
+        "feedbackId": "a023e3f2-d1b6-4d8d-8f92-89ef62f9fa47",
+        "userId": "user2072",
+        "timestamp": "2024-12-19T12:22:45Z",
+        "feedbackText": "I received my order promptly, and the product was in great condition. No issues whatsoever.",
+        "feedbackCategory": "Shipping"
+    }
+]
