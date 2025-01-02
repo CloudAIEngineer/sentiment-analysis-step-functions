@@ -12,8 +12,8 @@ plugins:
   - serverless-python-requirements
 
 custom:
-  emailEndpoint: oksana.awsconsole@gmail.com
-  bucketName: review-data-store-20241218
+  emailEndpoint: noreply@example.com
+  bucketName: change-this-name
 
 functions:
   extractFeedback:
